@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.156),rgba(0, 0, 0, 0.261)), url(./image/netflix_background.jpg);
+    height: 100vh;
+}
+
+.logo{
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.login-box{
+    background-color: #000000d1;
+    width: 430px;
+    height: 630px;
+    border-radius: 50px;
+    padding: 50px;
+}
