@@ -68,6 +68,13 @@
             measurementId: "G-B7VR01MCY2"
           };
         
+
+
+
+
+
+
+          
           // Initialize Firebase
           const app = initializeApp(firebaseConfig);
           const analytics = getAnalytics(app);
@@ -86,10 +93,16 @@
               console.log(userCredential)
               // Signed in 
               const user = userCredential.user;
+              var link = 'log.html';
+ 
+                location.href=link;
+                location.replace(link);
+                alert("가입 성공!")
+                window.open(link);
               // ...
             })
             .catch((error) => {
-              console.log('error')
+              alert('아이디 또는 비밀번호를 확인하세요!')
               const errorCode = error.code;
               const errorMessage = error.message;
               // ..
