@@ -53,14 +53,15 @@
 ![create_id](https://user-images.githubusercontent.com/116260619/218020770-1a5e9d37-4bb3-45e6-a8b2-5b8b71feefe7.jpg)
 ### 회원가입 완료 후 Firebase Database 안에 조건에 맞는 회원이 생성 되었음을 알 수 있다.
 
-## 시연영상 3
+## 3.LoginCheck
 ![login_check](https://user-images.githubusercontent.com/116260619/218020903-11059bd5-be81-4726-af76-b334b74b2d72.gif)
 
-## 시연영상 4
+## 4. img_gallery->detail
 
 
-## 시연영상 5
+## 5. logout
 
+![logout](https://user-images.githubusercontent.com/116260619/218023267-ff7d72dd-2a9c-472c-a80a-cdcbbe1bf20d.gif)
 
 
 
