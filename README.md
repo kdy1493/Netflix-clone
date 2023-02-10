@@ -1,4 +1,3 @@
-# Netflix-clone
  # Netflix 화면 구현
 > 2023년 2월 9일 ~ 2023년 2월 10일
 
