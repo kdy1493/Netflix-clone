@@ -57,6 +57,7 @@
 ![login_check](https://user-images.githubusercontent.com/116260619/218020903-11059bd5-be81-4726-af76-b334b74b2d72.gif)
 
 ## 4. img_gallery->detail
+![aaa](https://user-images.githubusercontent.com/116260619/218024149-05d7c0a7-3625-4247-9bca-c8b26a91cf3b.gif)
 
 
 ## 5. logout
@@ -72,8 +73,13 @@
 
 
 ## Trouble Shooting
-- 
-
+- css
+1. index.html의 구글 검색창에서 텍스트가 검색창을 벗어나는 문제가 발생했는데, 검색창과 검색 버튼을 별개의 div로 묶어주니까 해결되었다.
+2. 이미지 슬라이드의 크기가 화면 크기에 맞춰서 꽉 채우는 바람에 크기를 조절하고 싶었는데, css에 object-fit: cover; 와 원하는 사이즈를 입력했더니 해결되었다.
+- javascript
+1. html 간의 값을 자바스크립트로 넘기고 싶었는데 window.location.href (주소+value)를 넣어서 해결되었다.
+- database
+1. 데이터베이스에 join까진 되었지만 text input의 값과 데이터베이스의 값을 비교하는게 안되었는데 파이어베이스 내장함수(signInWithEmailAndPassword)를 사용함으로써 해결되었다.
 
 
 
