@@ -58,12 +58,13 @@
 ## 4. img_gallery->detail
 ![aaa](https://user-images.githubusercontent.com/116260619/218024149-05d7c0a7-3625-4247-9bca-c8b26a91cf3b.gif)
 
+### 부트스트랩, 이미지슬라이드 이용해서 인터페이스를 구현하였다. 
 
 ## 5. logout
 
 ![logout](https://user-images.githubusercontent.com/116260619/218023267-ff7d72dd-2a9c-472c-a80a-cdcbbe1bf20d.gif)
 
-네비게이션을 이용한 찜목록과, 로그아웃이 있다. 로그아웃을 누르면 처음 화면으로 이동하고 로그아웃된다.
+### 네비게이션을 이용한 찜목록과, 로그아웃이 있다. 로그아웃을 누르면 처음 화면으로 이동하고 로그아웃된다.
 
 
 ### 링크 [https://kdy1493.github.io/Netflix-clone/]
