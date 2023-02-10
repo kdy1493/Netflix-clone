@@ -135,6 +135,73 @@
 </body>
 </html>
 ```
+### index.css
+```
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    z-index: 5;
+}
+
+#background #background-gradient{
+    z-index: 1;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0) 0%, rgba(0,0,0,0.4) 36%, rgba(0,0,0,0.4) 61%, rgba(0,0,0,0.9) 100%);
+}
+
+#background img{
+    width: 100%;
+}
+
+#main-text{
+    z-index: 2;    
+    top: 35vh;
+}
+
+#main-text h2{
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+#main-text h5{
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+#main-text p{
+    font-size: 1.5vw;
+}
+
+#floatingInput{
+    width: 400px;
+}
+
+#background #email-btn{
+    width: 150px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+```
 
 ### Join.html
 ```
@@ -388,6 +455,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
   ``` 
+### style.css (log_html)
+```
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.156),rgba(0, 0, 0, 0.261)), url(./image/netflix_background.jpg);
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container img{
+    width: 150px;
+}
+
+.login-box{
+    background-color: #000000d1;
+    width: 430px;
+    height: 630px;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.label {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+  }
+
+.a {
+    text-decoration: none;
+  }
+
+
+
+```
   
 ### img_gallery.html
 ```
@@ -603,7 +713,79 @@
 </body>
 </html>
 ```
+### img_gallery.css
+```
+@charset "utf-8";
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link{
+    margin-left: 2%;
+}
+
+.h6{
+    color: white;
+    transition: all 0.4s;
+}
+
+.h6:hover{
+    color: #E50914;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+.gradient{
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.48691351540616246) 46%, rgba(0,0,0,0) 100%);
+}
+
+#footer{
+    padding: 2%;
+}
+
+#footer .h3{
+    margin-bottom: 2%;
+}
+
+#footer .col{
+    overflow: hidden;
+}
+
+#footer .col img{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#footer .col img:hover{
+    transform: scale(1.3);
+}
+
+#footer #first-col{
+    margin-bottom: 2%;
+}
+
+
+```
 ### 1. 
 
 ### 2. 
