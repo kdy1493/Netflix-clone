@@ -19,6 +19,10 @@ a{
     margin-left: 2%;
 }
 
+#logout{
+    color: white;
+}
+
 .h6{
     color: white;
     transition: all 0.4s;
