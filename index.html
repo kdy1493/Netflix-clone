@@ -26,14 +26,16 @@
         <div id="main-text" class="container-fluid position-absolute start-50 translate-middle text-center">
             <h2 class="text-light">영화와 시리즈를 무제한으로.</h2>
             <h5 class="text-light">다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h5>
-            <p class="text-light">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>        
-            <div class="container d-flex justify-content-center">
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" class="text-secondary text-opacity-75">이메일 주소</label>    
+            <p class="text-light">시청할 준비가 되셨나요? 시작하려면 상단의 로그인 버튼을 클릭하세요.</p>      
+            <form method="GET" action="https://www.google.com/search" target="_blank">
+                <div class="container d-flex justify-content-center">
+                    <div class="form-floating">
+                        <input name="query" class="form-control" id="floatingInput"  required value=""  maxlength=255 placeholder="google search">
+                        <label for="floatingInput" class="text-secondary text-opacity-75">구글 검색</label>    
+                    </div>
+                    <input type="submit" id="email-btn" class="btn btn-danger" style="background-color:#E50914;" value="검색하기">
                 </div>
-                <button id="email-btn" class="btn btn-danger" style="background-color: #E50914;" href="#">시작하기</button>
-            </div>
+            </form>
         </div>
 
         <div id="background-gradient" class="container-fluid position-absolute"></div>

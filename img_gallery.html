@@ -12,16 +12,19 @@
 </head>
 <body>
     <div class="container">
+        <!--메인/TV프로그램/영화/내가찜한콘텐츠 네비게이션바 추가-->
         <nav class="navbar navbar-expand-lg d-flex">
-            <div class="container-fluid">
+            <div class="container-fluid justify-content-start">
                 <a class="navbar-brand" href="./index.html">
                     <img src="./image/logo.png" alt="logo" height="50">
                 </a>
+                <a class="nav-link" href="#"><p class="h6">TV프로그램</p></a>
+                <a class="nav-link" href="#"><p class="h6">영화</p></a>
+                <a class="nav-link" href="#"><p class="h6">내가 찜한 콘텐츠</p></a>
             </div>
         </nav>
     </div>
-    <!-- 모달창 추가 고려 -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -32,7 +35,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item position-relative active">
+            <div class="carousel-item position-relative active" data-bs-interval="8000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/Wednesday.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -42,7 +45,7 @@
                     </p>
                 </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item position-relative" data-bs-interval="6000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/slam-dunk.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -50,7 +53,7 @@
                     <p>전국 제패를 꿈꾸는 북산고 농구부 5인방의 꿈과 열정, 멈추지 않는 도전을 그린 영화.</p>
                 </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item position-relative" data-bs-interval="6000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/avata2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -58,7 +61,7 @@
                     <p>판도라의 바다, 새로운 세계가 펼쳐진다.</p>
                 </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item position-relative" data-bs-interval="6000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/ThePointMen.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -66,7 +69,7 @@
                     <p>중동에서 납치된 한국인을 구하고자 고군분투하는 외교관과 국정원 요원의 이야기.</p>
                 </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item position-relative" data-bs-interval="6000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/DecisiontoLeave.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -74,7 +77,7 @@
                     <p>진심을 숨기는 용의자, 용의자에게 의심과 관심을 동시에 느끼는 형사, <br/> 그들의 헤어질 결심.</p>
                 </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item position-relative" data-bs-interval="6000">
                 <span class="gradient position-absolute"></span>
                 <img src="./image/BirdBox.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
