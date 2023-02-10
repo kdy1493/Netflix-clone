@@ -64,7 +64,7 @@
 
 ![logout](https://user-images.githubusercontent.com/116260619/218023267-ff7d72dd-2a9c-472c-a80a-cdcbbe1bf20d.gif)
 
-
+네비게이션을 이용한 찜목록과, 로그아웃이 있다. 로그아웃을 누르면 처음 화면으로 이동하고 로그아웃된다.
 
 
 ### 링크 [https://kdy1493.github.io/Netflix-clone/]
