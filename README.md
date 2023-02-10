@@ -79,7 +79,7 @@
 - javascript
 1. html 간의 값을 자바스크립트로 넘기고 싶었는데 window.location.href (주소+value)를 넣어서 해결되었다.
 - database
-1. 데이터베이스에 join까진 되었지만 text input의 값과 데이터베이스의 값을 비교하는게 안되었는데 파이어베이스 내장함수(signInWithEmailAndPassword)를 사용함으로써 해결되었다.
+1. 데이터베이스에 join까진 되었지만 text input의 값과 데이터베이스의 값을 비교하는게 안되었는데 파이어베이스 내장함수(signInWithEmailAndPassword)가 비교와 중복체크까지 해주었다 
 
 
 
