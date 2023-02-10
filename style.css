@@ -3,7 +3,7 @@ body{
     height: 100vh;
 }
 
-.logo{
+.container{
     width: 100vw;
     height: 70px;
     background-color: rgba(0, 0, 0, 0);
@@ -12,7 +12,7 @@ body{
     align-items: center;
 }
 
-.logo img{
+.container img{
     width: 150px;
 }
 
@@ -32,5 +32,8 @@ body{
     width: 100%;
   }
 
+.a {
+    text-decoration: none;
+  }
 
 

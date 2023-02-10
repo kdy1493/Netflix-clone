@@ -7,9 +7,9 @@
 
     <link rel="icon" href="./image/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
     <link rel="stylesheet" href="./style.css">
+    <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+    
   </head>
   <body>
     
@@ -30,25 +30,87 @@
         <form>
           <div class="mb-1">
             <label for="exampleInputEmail1" class="form-label small-text"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일 주소 또는 전화번호">
+            <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="이메일 주소 또는 전화번호">
           </div>
           <div class="mb-4">
             <label for="exampleInputPassword1" class="form-label"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+            <input type="password" class="form-control" id="signInPassword" placeholder="비밀번호">
           </div>
 
           <div class="d-grid gap-2 mb-2">
-            <button type="submit" class="btn text-white btn-lg mt-3" style="background-color: #E50914;">로그인</button>
+            <button type="submit" id="signInButton" class="btn text-white btn-lg mt-3" style="background-color: #E50914;">로그인</button>
             </div>
 
-          <div class="mb-3 form-check">
+          <!-- <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label text-white-50 small-text" for="exampleCheck1">로그인 정보 저장</label>
-          </div>
-        </form>
+              <a class="btn btn-primary" href="join.html" role="button">회원가입</a>
+          </div> -->
+          <div class="hybrid-login-form-help d-flex justify-content-between">
+            <div class="ui-binary-input login-remember-me">
+              <input type="checkbox" class="" name="rememberMe" id="bxid_rememberMe_true" value="true" tabindex="0" data-uia="rememberMe" checked="">
+              <label for="bxid_rememberMe_true" data-uia="label+rememberMe">
+                <span class="login-remember-me-label-text text-white-50">로그인 정보 저장</span>
+              </label>
+             
+            </div>
+            <div>
+              <a class="join_in text-white-50 small-text" style="text-decoration: none"  href="join.html">회원 가입</a>
+            </div>  
+            </form>
+            <script type="module">
+              // Import the functions you need from the SDKs you need
+              import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+              import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+              // TODO: Add SDKs for Firebase products that you want to use
+              // https://firebase.google.com/docs/web/setup#available-libraries
+            
+              // Your web app's Firebase configuration
+              // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+              const firebaseConfig = {
+                apiKey: "AIzaSyBzTu2i61Pbu6zVwf4aIp8h0X6W-MR0lUE",
+                authDomain: "netfilx-login.firebaseapp.com",
+                projectId: "netfilx-login",
+                storageBucket: "netfilx-login.appspot.com",
+                messagingSenderId: "296625560128",
+                appId: "1:296625560128:web:d81d0beef1e1003a101da5",
+                measurementId: "G-B7VR01MCY2"
+              };
+            
+              // Initialize Firebase
+              const app = initializeApp(firebaseConfig);
+              const analytics = getAnalytics(app);
+
+              import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+              
+              document.getElementById("signInButton").addEventListener('click', (event) => {
+                event.preventDefault()
+                const signInEmail = document.getElementById('signInEmail').value
+                const signInPassword = document.getElementById('signInPassword').value
+
+              const auth = getAuth();
+              signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+                .then((userCredential) => {
+                  // Signed in 
+                  console.log(userCredential)
+                  const user = userCredential.user;
+                  // ...
+                })
+                .catch((error) => {
+                  console.log('로그인 실패')
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+                });
+
+              })
+
+            </script>
+           
+        
       
       </section>
     </div>
+    
 
 
   
